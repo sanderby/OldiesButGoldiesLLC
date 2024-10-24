@@ -8,8 +8,6 @@ For oss gamlinger er det alltid greit med litt ekstra datahjelp, så detaljerte 
 2. Last ned og installer virtualbox for riktig system fra lenken: https://www.virtualbox.org/wiki/Downloads
 3. Åpne virtualbox
 4. Klikk new og gi maskinen et navn
-5. Velg Raspberry Pi os filen under iso Image
-6. Klikk next
-7. Velg et brukernavn, og passord, sett hostname til rpi
-8. Gi RAM og CPU avhengig av system, Om mulig gi 4096mb ram og 4 cpu.
-9. 
+8. Gi RAM og CPU avhengig av system, Om mulig gi 4096mb ram og 4 cpu, eretter klikk next.
+9. Bestem stlrrekse på virtual harddrive.
+10. Finish
