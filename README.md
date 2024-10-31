@@ -3,11 +3,10 @@
 ## Hvordan bidra
 For oss gamlinger er det alltid greit med litt ekstra datahjelp, så detaljerte instruksjoner følger.
 
-### Oppsett for PC/Mac
-1. Last ned raspberry os for desktop fra lenken: https://www.raspberrypi.com/software/raspberry-pi-desktop/
-2. Last ned og installer virtualbox for riktig system fra lenken: https://www.virtualbox.org/wiki/Downloads
-3. Åpne virtualbox
-4. Klikk new og gi maskinen et navn
-8. Gi RAM og CPU avhengig av system, Om mulig gi 4096mb ram og 4 cpu, eretter klikk next.
-9. Bestem stlrrekse på virtual harddrive.
-10. Finish
+### Oppsett av GIT
+1. Last ned og installer GIT fra https://git-scm.com/downloads
+2. Åpne git bash
+3. skriv git config --global user.name "Ditt Navn"
+4. skriv git config --global user.email "din.email@eksempel.com" 
+5. git pull https://github.com/sanderby/OldiesButGoldiesLLC
+
