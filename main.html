@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mausund Feltstasjon</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Dynamisk Kart - Mausund Feltstasjon</h1>
+        <img src="Bilder/Mausund logo.png">
+    </div>
+
+    <div class="container">
+        <div id="map"></div>
+        <div class="info-box">
+            <h2>Fargekoder</h2>
+            
+
+            <div class="legend-item">
+                <div class="color-box color-green"></div>
+                <span>Lite forurensing</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box color-yellow"></div>
+                <span>Moderat forurensing</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box color-red"></div>
+                <span>Mye forurensing</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer med lenker til sosiale medier -->
+<div class="footer">
+    <a href="https://www.instagram.com/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-icon">
+    </a>
+    
+    <a href="https://www.facebook.com/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="social-icon">
+    </a>
+</div>
+
+
+    <script>
+        // Initialiser kartet og sett midtpunkt og zoom-nivå til Mausund Feltstasjon
+        var map = L.map('map').setView([63.8735, 8.6678], 10);
+
+        // Legg til kartlag fra OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Legg til en markør på Mausund Feltstasjon
+        var marker = L.marker([63.8735, 8.6678]).addTo(map);
+        marker.bindPopup("<b>Mausund Feltstasjon</b><br>Et forskningssted i Trøndelag.").openPopup();
+
+        // // Legg til en sirkel rundt Mausund Feltstasjon
+        // var circle = L.circle([63.8735, 8.6678], {
+        //     color: 'blue',
+        //     fillColor: '#30f',
+        //     fillOpacity: 0.3,
+        //     radius: 500
+        // }).addTo(map);
+        // circle.bindPopup("Et område rundt Mausund Feltstasjon.");
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+ /* Stil for kartcontaineren */
+ #map {
+    height: 500px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+html, body {
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    text-align: center;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Avstand mellom overskrift og bilde */
+    margin-top: 10px;
+}
+.header img {
+    width: 170px;
+    height: 90px;
+    /* border-radius: 50%; */
+    border: 2px solid #333;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 80%;
+}
+/* Stil for boksen ved siden av kartet */
+.info-box {
+    height: 400px;
+    width: 35%; /* 35% bredde for info-boksen */
+    margin-left: 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+/* Stil for fargeboksene og teksten */
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.color-box {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    border: 1px solid #333;
+}
+
+/* Eksempler på farger */
+.color-yellow { background-color: yellow; }
+.color-green { background-color: green; }
+.color-red { background-color: red; }
+
+ /* Stil for footer og sosiale medier ikoner */
+ .footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Stil for ikoner */
+.social-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;}
