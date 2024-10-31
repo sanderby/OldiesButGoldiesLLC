@@ -11,3 +11,4 @@ For oss gamlinger er det alltid greit med litt ekstra datahjelp, så detaljerte 
 5. skriv: git pull https://github.com/sanderby/OldiesButGoldiesLLC
 6. *VIKTIG* Alltid lag ny branch før dere endrer noe som helst
 7. Ny branch lages med: git checkout -b ny-funksjon
+8. Du kan nå begynne å jobbe
