@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Kartlegging av søppel</h1>
+        <img src="./assets/Logo med riktig tittel.png" alt="Oldies but goldies logo">
+    </header>
+    <main>
+        <aside>
+            <div class="menu card">
+                <h2 class="menu__item">Registrer søppelnivå</h2>
+                <p class="menu__item">Velg søppelmengde</p>
+                <select name="trashvalue" id="trash" class="menu__item select">
+                    <option value="low">Lav</option>
+                    <option value="medium">Middels</option>
+                    <option value="high">Høy</option>
+                </select>
+                <button class="button button--normal menu__item" id="add" disabled>Registrer</button>
+                <button class="button button--reset menu__item" id="reset">Reset</button>
+            </div>
+            <div class="info card">
+                <h2>Søppelnivå</h2>
+                <p class="boxthing boxthing--green">Lavt</p>
+                <p class="boxthing boxthing--yellow">Middels</p>
+                <p class="boxthing boxthing--red">Høyt</p>
+            </div>
+        </aside>
+        <div id="map"></div>
+    </main>
+</body>
+
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</html>

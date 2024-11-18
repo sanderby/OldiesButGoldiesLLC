@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-color: #011a38;
+}
+
+main {
+  height: 90vh;
+}
+
+aside {
+  position: absolute;
+  width: 15%;
+  top: 20%;
+  left: 10px;
+  z-index: 10;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  background-color: lightblue;
+  z-index: 0;
+}
+
+.info {
+    margin-top: 10%;
+}
+
+.boxthing::before{
+    display: inline-block;
+    height: 0.8em;
+    width: 0.8em;
+    content: "";
+    margin-right: 5px;
+}
+
+.boxthing--green::before{
+    background-color: green;
+}
+
+.boxthing--yellow::before{
+    background-color: yellow;
+}
+
+.boxthing--red::before{
+    background-color: red;
+}
+
+.menu__item {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding: 12px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+.select {
+  border-radius: 10px;
+}
+
+.button {
+  color: white;
+  border-radius: 10px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button--normal {
+  background-color: #4681f4;
+}
+
+.button--normal:hover {
+  background-color: #3968c7;
+}
+
+.button--reset {
+  background-color: red;
+}
+
+.button--reset:hover {
+  background-color: rgb(214, 0, 0);
+}
+
+button[disabled] {
+  background-color: lightgray;
+}
+
+button[disabled]:hover {
+  background-color: lightgray;
+  cursor: default;
+}
+
+img {
+  max-height: 100%;
+}
